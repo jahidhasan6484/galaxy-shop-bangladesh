@@ -5,9 +5,11 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import ProductCard from "./Components/ProductCart/ProductCard";
+import Services from "./Components/Services/Services";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Header />
       <Home />
       <ProductCard />
+      <Services />
+      <Footer />
       <Switch>
         <Route></Route>
       </Switch>

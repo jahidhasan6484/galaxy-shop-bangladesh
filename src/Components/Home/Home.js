@@ -4,6 +4,7 @@ import Slider5 from '../../images/slide_5.jpg';
 import Slider6 from '../../images/slide_6.png';
 import Slider7 from '../../images/slide_7.jpg';
 import miniLogo from '../../images/mini_6.png';
+import arrowRight from '../../images/arrow-right-circle-fill.svg';
 
 const Home = () => {
     return (
@@ -24,6 +25,7 @@ const Home = () => {
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
                                 </div>
+                                <button className="btn btn-primary">View Product</button>
                             </div>
                             <div className="col-md-6">
                                 <img className="img-fluid" src={Slider4}></img>
@@ -40,6 +42,7 @@ const Home = () => {
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
                                 </div>
+                                <button className="btn btn-primary">View Product</button>
                             </div>
                             <div className="col-md-6">
                                 <img className="img-fluid" src={Slider5}></img>
@@ -56,6 +59,7 @@ const Home = () => {
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
                                 </div>
+                                <button className="btn btn-primary">View Product</button>
                             </div>
                             <div className="col-md-6">
                                 <img className="img-fluid" src={Slider6}></img>
@@ -72,6 +76,7 @@ const Home = () => {
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
                                 </div>
+                                <button className="btn btn-primary">View Product</button>
                             </div>
                             <div className="col-md-6">
                                 <img className="img-fluid" src={Slider7}></img>

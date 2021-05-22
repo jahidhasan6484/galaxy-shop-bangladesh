@@ -86,3 +86,17 @@
   background-color: #cccaca;
   border-radius: 5px;
 }
+.aaaaa img {
+  width: 90px;
+}
+.footer {
+  background-color: #232323;
+}
+.footer a {
+  color: rgb(161, 158, 158);
+  text-decoration: none;
+}
+.branding a {
+  color: #000;
+  text-decoration: none;
+}
