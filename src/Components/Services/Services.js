@@ -5,7 +5,7 @@ import support from '../../images/03.png';
 
 const Services = () => {
     return (
-        <section class="container aaaaa mt-5">
+        <section class="container service">
             <div class="row">
                 <div class="col-md-3 col-sm-6 text-center mb-5"><img class="d-block w-20 img-thumbnail rounded mx-auto mb-4" src={featureServices} alt="Money Back" />
                     <h6 class="mb-2">Our Feature Services</h6>

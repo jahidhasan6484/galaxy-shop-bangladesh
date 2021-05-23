@@ -6,7 +6,7 @@ const Footer = () => {
             <footer className="footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-3 col-md-6 mb-5">
+                        <div className="col-lg-3 col-md-6">
                             <section>
                                 <h5 className="text-white mt-5 mb-5">Get In Touch With Us</h5>
                                 <p className="text-white mt-2">Samsung Call Center:</p>
@@ -45,10 +45,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <div className="branding text-center mt-5 mb-5">
+                    <p>© SAMSUNG All rights reserved.<br></br> Developed by &nbsp;<a href="https://unruffled-kowalevski-4c8007.netlify.app/" target="_blank"> &nbsp;Md. Jahid Hasan</a></p>
+                </div>
             </footer>
-            <div className="branding text-center mt-5 mb-5">
-                <p>© SAMSUNG All rights reserved.<br></br> Developed by &nbsp;<i className="text-danger"></i><a href="https://unruffled-kowalevski-4c8007.netlify.app/" target="_blank"> &nbsp;Md. Jahid Hasan</a></p>
-            </div>
         </>
     );
 };

@@ -4,7 +4,6 @@ import Slider5 from '../../images/slide_5.jpg';
 import Slider6 from '../../images/slide_6.png';
 import Slider7 from '../../images/slide_7.jpg';
 import miniLogo from '../../images/mini_6.png';
-import arrowRight from '../../images/arrow-right-circle-fill.svg';
 
 const Home = () => {
     return (
