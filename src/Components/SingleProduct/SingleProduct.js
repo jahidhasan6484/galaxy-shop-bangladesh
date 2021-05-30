@@ -8,6 +8,7 @@ import facebook from '../../images/facebook.png';
 import instagram from '../../images/instagram.png';
 import twitter from '../../images/twitter.png';
 import googlePlus from '../../images/googlePlus.png';
+import Footer from '../Footer/Footer';
 
 const SingleProduct = () => {
     const [banner, setBanner] = useState(false);
@@ -97,8 +98,8 @@ const SingleProduct = () => {
                                         <button type="submit" className="btn btn-primary mt-4">Add to Cart</button>
                                     </div>
                                 </div>
-                                <div className="row mt-5">
-                                    <div className="col-lg-6 col-md-6 col-sm-12">
+                                <div className="row mt-5 bottomDetails">
+                                    <div className="col-lg-6 col-md-6 col-sm-12 mb-5">
                                         <button className="btn btn-outline-secondary">To Wishlist</button>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-sm-12 detailsSocial">
@@ -114,6 +115,7 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
