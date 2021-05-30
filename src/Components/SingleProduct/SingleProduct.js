@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
+import mini from '../../images/mini_6.png';
+import logo from '../../images/logo.png';
+import facebook from '../../images/facebook.png';
+import instagram from '../../images/instagram.png';
+import twitter from '../../images/twitter.png';
+import googlePlus from '../../images/googlePlus.png';
 
 const SingleProduct = () => {
+    const [banner, setBanner] = useState(false);
+
     const { id } = useParams();
 
     const [productDetails, setProductDetails] = useState([]);
@@ -22,63 +31,85 @@ const SingleProduct = () => {
                         <h2>Single Product</h2>
                     </div>
                     <div className="col-md-6 col-ms-12">
-                        <p>Home-Details-Single Product</p>
+                        <p> <Link className="back" to="/">Home</Link> - <Link className="back" to="#">Details</Link> - Single Product</p>
                     </div>
                 </div>
                 <div className="row mt-5">
-                    <div className="card col-lg-6 col-md-6 col-sm-12 mt-5 cardTopImage">
-                        <img className="img-fluid" src={productDetails?.photo}></img>
+                    <div className="card col-lg-6 col-md-6 col-sm-12 mt-5 mb-5">
+                        {
+                            !banner && <img className="img-fluid" src={productDetails?.photo}></img>
+                        }
+                        <div className="row morePhotos">
+                            <div className="col-lg-2 col-md-6 col-sm-6 morePhoto">
+                                <img className="img-fluid" src={mini}></img>
+                            </div>
+                            <div className="col-lg-2 col-md-6 col-sm-6 morePhoto">
+                                <img className="img-fluid" src={logo}></img>
+                            </div>
+                            <div className="col-lg-2 col-md-6 col-sm-6 morePhoto">
+                                <img className="img-fluid" src={mini}></img>
+                            </div>
+                            <div className="col-lg-2 col-md-6 col-sm-6 morePhoto">
+                                <img className="img-fluid" src={logo}></img>
+                            </div>
+                            <div className="col-lg-2 col-md-6 col-sm-6 morePhoto">
+                                <img className="img-fluid" src={mini}></img>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12">
+                    <div className="px-5 col-lg-6 col-md-6 col-sm-12">
                         <h3>{productDetails?.name}</h3>
-                        <h5>৳{productDetails?.price}</h5>
+                        <h5>৳ {productDetails?.price}</h5>
                         <small> <a href="#">more info</a> </small>
-                        <form>
+                        <form className="mt-5">
                             <div className="form-row row">
-                                <div className="form-group col-md-6 col-sm-12">
-                                    <label for="chooseColor">Choose color</label>
-                                    <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
-                                    <option>Large select</option>
-                                </div>
-                                <div className="form-group col-md-6 col-sm-12">
-                                    <label for="inputPassword4">Password</label>
-                                    <input type="password" className="form-control" id="inputPassword4" placeholder="Password" />
-                                </div>
-                            </div>
-                            <div className="form-group">
-                                <label for="inputAddress">Address</label>
-                                <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
-                            </div>
-                            <div className="form-group">
-                                <label for="inputAddress2">Address 2</label>
-                                <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-                            </div>
-                            <div className="form-row">
-                                <div className="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" className="form-control" id="inputCity" />
-                                </div>
-                                <div className="form-group col-md-4">
-                                    <label for="inputState">State</label>
+                                <div className="col-md-6 col-sm-12 mb-5">
+                                    <label for="inputState">Chose color</label>
                                     <select id="inputState" className="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
+                                        <option selected>Black</option>
+                                        <option>Red</option>
+                                        <option>White</option>
+                                        <option>Gray</option>
                                     </select>
                                 </div>
-                                <div className="form-group col-md-2">
-                                    <label for="inputZip">Zip</label>
-                                    <input type="text" className="form-control" id="inputZip" />
+                                <div className="col-md-6 col-sm-12 mb-5">
+                                    <label for="inputState">Battery capacity</label>
+                                    <select id="inputState" className="form-control">
+                                        <option selected>5,000mAh</option>
+                                        <option>4,500mAh </option>
+                                        <option>4,000mAh</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div className="form-group">
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label className="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
+                            <div className="form-row row">
+                                <div className="col-md-6 col-sm-12">
+                                    <label for="inputState">Quantity</label>
+                                    <select id="inputState" className="form-control">
+                                        <option selected>1</option>
+                                        <option>2 </option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div className="col-md-6 col-sm-12">
+                                    <div className="row">
+                                        <button type="submit" className="btn btn-primary mt-4">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-lg-6 col-md-6 col-sm-12">
+                                        <button className="btn btn-outline-secondary">To Wishlist</button>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-12 detailsSocial">
+                                        <span>Share:</span>
+                                        <a href="#"><img src={facebook}></img></a>
+                                        <a href="#"><img src={twitter}></img></a>
+                                        <a href="#"><img src={instagram}></img></a>
+                                        <a href="#"><img src={googlePlus}></img></a>
+                                    </div>
                                 </div>
                             </div>
-                            <button type="submit" className="btn btn-primary">Sign in</button>
                         </form>
                     </div>
                 </div>

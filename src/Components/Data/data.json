@@ -2,7 +2,7 @@
     "id": 0,
     "category": "Smartphones",
     "name": "Samsung Galaxy Note10-Lite",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/17_Samsung_Galaxy_Note10Lite.jpg",
+    "photo": "https://ibb.co/cvff9tj",
     "previousPrice": "",
     "price": "49,999"
   },
@@ -10,7 +10,7 @@
     "id": 1,
     "category": "Smartphones",
     "name": "Galaxy A72 (8/256GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/50_Galaxy_A72_8256GB.png",
+    "photo": "https://ibb.co/yRs0KSj",
     "previousPrice": "",
     "price": "45,999"
   },
@@ -18,7 +18,7 @@
     "id": 2,
     "category": "Smartphones",
     "name": "Galaxy M51 (8/128 GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/40_Galaxy_M51__8128_GB.png",
+    "photo": "https://ibb.co/BgWKRfX",
     "previousPrice": "35999.00",
     "price": "33999.00"
   },
@@ -26,7 +26,7 @@
     "id": 3,
     "category": "Smartphones",
     "name": "Samsung Galaxy A71",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/11_Samsung_Galaxy_A71.jpg",
+    "photo": "https://ibb.co/0Yw3xzZ",
     "previousPrice": "34999.00",
     "price": "32999.00"
   },
@@ -34,7 +34,7 @@
     "id": 4,
     "category": "Smartphones",
     "name": "Galaxy M31 (8/128 GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/46_Galaxy_M31_8128_GB.png",
+    "photo": "https://ibb.co/2Yg3Xvm",
     "previousPrice": "27999.00",
     "price": "23999.00"
   },
@@ -42,7 +42,7 @@
     "id": 5,
     "category": "Smartphones",
     "name": "Galaxy A51 (6/128 GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/41_Galaxy_A51_6128_GB.png",
+    "photo": "https://ibb.co/593Qfct",
     "previousPrice": "27499.00",
     "price": "26499.00"
   },
@@ -50,7 +50,7 @@
     "id": 6,
     "category": "Smartphones",
     "name": "Galaxy A32 (6/128)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/47_Galaxy_A32_6128.png",
+    "photo": "https://ibb.co/b6MzBJn",
     "previousPrice": "",
     "price": "26,999"
   },
@@ -58,31 +58,31 @@
     "id": 7,
     "category": "Smartphones",
     "name": "Samsung Galaxy M31",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/26_Samsung_Galaxy_M31.jpg",
+    "photo": "https://ibb.co/vsqcvDS",
     "previousPrice": "23999.00",
     "price": "19999.00"
   },
   {
     "id": 8,
     "category": "Smartphones",
-    "name": "Galaxy S21 Ultra 5G*",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/36__Galaxy_S21_Ultra_5G.png",
-    "previousPrice": "",
-    "price": "139,999"
+    "name": "Galaxy M21 (6/128GB)",
+    "photo": "https://ibb.co/4Pc5b9L",
+    "previousPrice": "20999.00",
+    "price": "18999.00"
   },
   {
     "id": 9,
     "category": "Smartphones",
-    "name": "Galaxy M21 (6/128GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/45_Galaxy_M21_6128GB.png",
-    "previousPrice": "20999.00",
-    "price": "18999.00"
+    "name": "Galaxy S21 Ultra 5G*",
+    "photo": "https://ibb.co/nDQy5qf",
+    "previousPrice": "",
+    "price": "139,999"
   },
   {
     "id": 10,
     "category": "Smartphones",
     "name": "Galaxy Note 20 Ultra 5G (12/256 GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/30_Galaxy_Note_20_Ultra_5G_12256_GB_SKD.png",
+    "photo": "https://ibb.co/CB4DRV9",
     "previousPrice": "",
     "price": "134,999"
   },
@@ -90,7 +90,7 @@
     "id": 11,
     "category": "Smartphones",
     "name": "Galaxy M01s (3/32 GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/31_Galaxy_M01s_332_GB.png",
+    "photo": "https://ibb.co/7Rhmcrj",
     "previousPrice": "",
     "price": "11,999"
   },
@@ -98,32 +98,8 @@
     "id": 12,
     "category": "Smartphones",
     "name": "Galaxy M02 (3/32GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/34_Galaxy_M02_332GB.png",
+    "photo": "https://ibb.co/hY0YM6d",
     "previousPrice": "",
     "price": "10,999"
-  },
-  {
-    "id": 13,
-    "category": "Smartphones",
-    "name": "Galaxy M02 (2/32GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/33_Galaxy_M02_232GB.png",
-    "previousPrice": "",
-    "price": "9,599"
-  },
-  {
-    "id": 14,
-    "category": "Smartphones",
-    "name": "Galaxy M01 Core (2/32GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/28_Galaxy_M01_Core_232GB.png",
-    "previousPrice": "7999.00",
-    "price": "6999.00"
-  },
-  {
-    "id": 15,
-    "category": "Smartphones",
-    "name": "Galaxy M01 Core (1/16GB)",
-    "photo": "http://www.galaxyshopbd.com/vdata/product/27_Galaxy_M01_Core_116GB.png",
-    "previousPrice": "6999.00",
-    "price": "5999.00"
   }
 ]
