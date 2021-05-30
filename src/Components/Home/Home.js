@@ -18,7 +18,7 @@ const Home = () => {
                 <div className="carousel-item active carouselDesign">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 leftCarousel">
                                 <div className="from-bottom">
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
@@ -35,7 +35,7 @@ const Home = () => {
                 <div className="carousel-item carouselDesign">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 leftCarousel">
                                 <div className="from-bottom">
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
@@ -52,7 +52,7 @@ const Home = () => {
                 <div className="carousel-item carouselDesign">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 leftCarousel">
                                 <div className="from-bottom">
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
@@ -69,7 +69,7 @@ const Home = () => {
                 <div className="carousel-item carouselDesign">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 leftCarousel">
                                 <div className="from-bottom">
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
@@ -77,7 +77,7 @@ const Home = () => {
                                 </div>
                                 <button className="btn btn-primary">View Product</button>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6 rightCarousel">
                                 <img className="img-fluid" src={Slider7}></img>
                             </div>
                         </div>

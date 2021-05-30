@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import data from '../Data/data.json';
 import ProductCard from '../ProductCard/ProductCard';
 
 const LoadProducts = () => {
-    const [products, setProducts] = useState([data]);
+    const [products, setProducts] = useState([]);
     useEffect(() => {
-        setProducts(data);
+        const url = `https://mocki.io/v1/07090c30-805f-4492-a97c-fccfc4bd23b9`;
+        fetch(url)
+        .then(res => res.json())
+        .then(data => setProducts(data))
     }, [])
     return (
         <div className="container">

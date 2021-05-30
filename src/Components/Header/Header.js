@@ -4,10 +4,6 @@ import logo from '../../images/logo.png';
 import search from '../../images/search.svg';
 import signIn from '../../images/signIn.svg';
 import cart from '../../images/cart.svg';
-import Home from '../Home/Home';
-import LoadProducts from '../LoadProducts/LoadProducts';
-import Services from '../Services/Services';
-import Footer from '../Footer/Footer';
 
 const Header = () => {
     return (
@@ -42,10 +38,6 @@ const Header = () => {
                     </div>
                 </nav>
             </div>
-            <Home />
-            <LoadProducts />
-            <Services />
-            <Footer />
         </>
     );
 };
