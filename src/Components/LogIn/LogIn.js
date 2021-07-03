@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import "./LogIn.css";
+import { useHistory, useLocation } from "react-router";
 import { UserContext } from "../../App";
 import firebase from "firebase/app";
 import "firebase/auth";
@@ -12,6 +13,10 @@ if (!firebase.apps.length) {
 }
 
 const LogIn = () => {
+    const history = useHistory();
+    const location = useLocation();
+    const { from } = location.state || { from: { pathname: "/" } };
+
     const [user, setUser] = useContext(UserContext);
     const [newUser, setNewUser] = useState(false);
 
@@ -84,21 +89,25 @@ const LogIn = () => {
         });
     }
 
-    const userSignIn = () => {
-        storeAuthToken();
-        const newInfo = { ...user }
-        newInfo.isSignedIn = true;
-        setUser(newInfo);
-    }
-
     const storeAuthToken = () => {
-        firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
+        firebase.auth().currentUser.getIdToken( true )
             .then(function (idToken) {
                 sessionStorage.setItem('token', idToken);
             }).catch(function (error) {
                 // Handle error
             });
     }
+    
+    const userSignIn = () => {
+        storeAuthToken();
+        const newInfo = { ...user }
+        newInfo.isSignedIn = true;
+        setUser(newInfo);
+        history.replace(from);
+    }
+
+
+    console.log(user.email);
 
     return (
         <div className="login">
@@ -127,6 +136,7 @@ const LogIn = () => {
                     {
                         user.success && userSignIn()
                     }
+                    <p>{user.email}</p>
                 </div>
             </div>
         </div>

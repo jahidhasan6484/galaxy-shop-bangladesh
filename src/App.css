@@ -69,7 +69,8 @@
   text-align: center;
   margin: 1rem;
   padding:0.25rem;
-  border-radius: 5px;;
+  border-radius: 5px;
+  color: #fff;
 }
 .productImg {
   width: 100%;
@@ -172,4 +173,7 @@
   border: 1px solid gray;
   border-radius: 10px;
   padding: 10px;
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
 }

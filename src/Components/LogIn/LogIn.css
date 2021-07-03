@@ -11,9 +11,9 @@
     color: blue;
     transition: all 0.3s ease;
   }
-  span:hover {
+  /* span:hover {
     letter-spacing: 2px;
-  }
+  } */
   .greetings {
     display: flex;
     flex-direction: column;

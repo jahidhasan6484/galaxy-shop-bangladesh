@@ -11,7 +11,7 @@ const AddAdmin = () => {
   
     const handleSubmit = () => {
       const admin = { ...info };
-      fetch("http://localhost:4000/addAdmin", {
+      fetch("https://kinder-mountie-35880.herokuapp.com/addAdmin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(admin),

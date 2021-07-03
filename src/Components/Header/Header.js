@@ -12,8 +12,6 @@ const Header = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-
-
     const [info, setInfo] = useState({});
     const [file, setFile] = useState(null);
 
@@ -37,7 +35,7 @@ const Header = () => {
         formData.append("presentPrice", info.presentPrice);
         formData.append("productStatus", info.productStatus);
 
-        fetch("http://localhost:4000/addAPhone", {
+        fetch("https://kinder-mountie-35880.herokuapp.com/addAPhone", {
             method: "POST",
             body: formData,
         })
@@ -78,7 +76,7 @@ const Header = () => {
                         <div>
                             <span className="subMenu">Home</span>
                             <span className="subMenu">Help &amp; Support</span>
-                            <span className="subMenu" onClick={handleShow}>Add Product</span>
+                            {/* <span className="subMenu" onClick={handleShow}>Add Product</span> */}
                         </div>
                     </div>
                 </nav>
@@ -97,7 +95,7 @@ const Header = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Previous Price</label>
-                            <textarea onBlur={handleBlur} type="text" className="form-control" name="previousPrice" placeholder="Previous Price" required />
+                            <textarea onBlur={handleBlur} type="text" className="form-control" name="previousPrice" placeholder="Previous Price" />
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Present Price</label>

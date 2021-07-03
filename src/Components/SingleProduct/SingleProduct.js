@@ -15,7 +15,7 @@ const SingleProduct = () => {
 
     const { id } = useParams();
     useEffect(() => {
-        fetch('http://localhost:4000/phone')
+        fetch('https://kinder-mountie-35880.herokuapp.com/phone')
             .then(res => res.json())
             .then(data => {
                 setPhone(data)

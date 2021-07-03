@@ -13,24 +13,36 @@ import LogIn from "./Components/LogIn/LogIn";
 import Services from "./Components/Services/Services";
 import SingleProduct from "./Components/SingleProduct/SingleProduct";
 import AddAdmin from "./Components/AddAdmin/AddAdmin";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import Check from "./Components/Check/Check";
 
 export const UserContext = createContext();
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({});
+  const [user, setUser] = useState({
+    isSignedIn: false,
+    name: '',
+    email: '',
+    password: ''
+  })
+
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider value={[user, setUser]}>
     <Router>
     {/* <AddAdmin /> */}
       <Switch>
         <Route exact path="/">
           <Header />
           <Home />
+          
           {/* <AddAdmin /> */}
           <LoadProducts />
           <Services />
           <Footer />
         </Route>
+        <PrivateRoute path="/check">
+        <Check />
+          </PrivateRoute>
         <Route path="/singleProduct/:id">
           <SingleProduct />
         </Route>

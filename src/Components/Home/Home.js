@@ -1,4 +1,6 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import Slider4 from '../../images/Slider-4.png';
 import Slider5 from '../../images/slide_5.jpg';
 import Slider6 from '../../images/slide_6.png';
@@ -19,15 +21,17 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 leftCarousel">
-                                <div className="from-bottom">
+                                <Fade bottom>
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
-                                </div>
-                                <button className="btn btn-primary">View Product</button>
+                                </Fade>
+                                <Zoom>
+                                    <button className="btn btn-primary">View Product</button>
+                                </Zoom>
                             </div>
                             <div className="col-md-6">
-                                <img className="img-fluid" src={Slider4}></img>
+                                <img className="img-fluid" src={Slider4} alt="slider4"></img>
                             </div>
                         </div>
                     </div>
@@ -36,15 +40,17 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 leftCarousel">
-                                <div className="from-bottom">
+                                <Fade bottom>
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
-                                </div>
-                                <button className="btn btn-primary">View Product</button>
+                                </Fade>
+                                <Zoom>
+                                    <button className="btn btn-primary">View Product</button>
+                                </Zoom>
                             </div>
                             <div className="col-md-6">
-                                <img className="img-fluid" src={Slider5}></img>
+                                <img className="img-fluid" src={Slider5} alt="slider5"></img>
                             </div>
                         </div>
                     </div>
@@ -53,15 +59,17 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 leftCarousel">
-                                <div className="from-bottom">
+                                <Fade bottom>
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
-                                </div>
-                                <button className="btn btn-primary">View Product</button>
+                                </Fade>
+                                <Zoom>
+                                    <button className="btn btn-primary">View Product</button>
+                                </Zoom>
                             </div>
                             <div className="col-md-6">
-                                <img className="img-fluid" src={Slider6}></img>
+                                <img className="img-fluid" src={Slider6} alt="slider6"></img>
                             </div>
                         </div>
                     </div>
@@ -70,15 +78,17 @@ const Home = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 leftCarousel">
-                                <div className="from-bottom">
+                                <Fade bottom>
                                     <img className="d-inline-block mt-5 mb-4 miniLogo img-fluid" src={miniLogo} alt="Samsung Mini Logo" />
                                     <div className="h2 text-body mb-2 pt-1">অর্ডার করুন ঘরে বসে</div>
                                     <div className="h2 text-body mb-4 pb-1"><span className="text-medium">ফোন পৌঁছে যাবে আপনার কাছে!</span></div>
-                                </div>
-                                <button className="btn btn-primary">View Product</button>
+                                </Fade>
+                                <Zoom>
+                                    <button className="btn btn-primary">View Product</button>
+                                </Zoom>
                             </div>
                             <div className="col-md-6 rightCarousel">
-                                <img className="img-fluid" src={Slider7}></img>
+                                <img className="img-fluid" src={Slider7} alt="slider7"></img>
                             </div>
                         </div>
                     </div>
